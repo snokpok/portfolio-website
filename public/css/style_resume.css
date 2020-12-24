@@ -1,0 +1,58 @@
+/* RESUME PAGE */
+h1,h2,h3,h4,p {
+  color: white;
+}
+h1 {
+  font-size: 70px;
+  font-weight: 10;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 50;
+  font-family:'Courier New', Courier, monospace;
+}
+section {
+  margin: 50px;
+}
+
+
+/* Experiences */
+div.experience {
+  padding: 10px;
+}
+.heading {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 900;
+  font-size: 25px;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 2px;
+}
+.subheading {
+  font-style: italic;
+  font-weight: 100;
+  color: gray;
+  text-transform: uppercase;
+  margin-top: 3px;
+}
+.description {
+  font-size: 13px;
+}
+.time {
+  font-weight: 100;
+  font-style: italic;
+  font-size: 10px;
+}
+.location {
+  font-weight: bold;
+  color:rgb(0, 255, 76);
+}
+
+/* Education */
+.grade {
+  color: greenyellow;
+}
+
+
+
