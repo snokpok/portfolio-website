@@ -1,18 +1,22 @@
 /* RESUME PAGE */
+body {
+  font-size: 16px;
+  width: 80%;
+}
+
 h1,h2,h3,h4,p {
   color: white;
 }
 h1 {
-  font-size: 70px;
+  font-size: 5rem;
   font-weight: 10;
 }
 h2 {
-  font-size: 30px;
+  font-size: 2.5rem;
   font-weight: 50;
   font-family:'Courier New', Courier, monospace;
 }
 section {
-  margin: 50px;
 }
 
 
@@ -23,7 +27,7 @@ div.experience {
 .heading {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 900;
-  font-size: 25px;
+  font-size: 2rem;
   margin-bottom: 2px;
   text-transform: uppercase;
   text-decoration: underline;
@@ -32,17 +36,18 @@ div.experience {
 .subheading {
   font-style: italic;
   font-weight: 100;
+  font-size: 1.3rem;
   color: gray;
   text-transform: uppercase;
   margin-top: 3px;
 }
 .description {
-  font-size: 13px;
+  font-size: 1.5rem;
 }
 .time {
   font-weight: 100;
   font-style: italic;
-  font-size: 10px;
+  font-size: 1rem;
 }
 .location {
   font-weight: bold;

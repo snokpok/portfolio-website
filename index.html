@@ -10,25 +10,86 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link href="public/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="static/css/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <nav>
-      <a href="/portfolio-website/index.html"><div id="logo">VV</div></a>
+      <a href="#"><div id="logo">VV</div></a>
       <ul>
-        <li><a href="index.html/#projects">My projects</a></li>
-        <li><a href="index.html/#about">About</a></li>
+        <li><a href="#projects">My projects</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="resume.html">Resume</a></li>
       </ul>
     </nav>
+    <button id='to-top' onclick="topFunction()">
+      Top
+    </button>
     <header>
-      <h3>Hello World</h3>
-      <h1>I'm <span class="name">Vincent Vu</span></h1>
+      <h3 id='hello-world'>Hello World</h3>
+      <div>
+        <h1>I'm <span class="name">Vincent Vu</span></h1>
+        <img src='./static/picofme.jpg'>
+      </div>
       <p id="profession">Full-stack Web Developer</p>
       <hr />
     </header>
-    <section id="#projects">
-      <h1>Things I have made:</h1>
+    <section id="projects">
+      <h2>Things I have made:</h2>
+      <div class='project' id='heart-attack-clf'>
+        <div class="cover-image" id='heart-attack-clf'></div>
+        <figcaption>
+          <h4>Heart Attack Classification</h4>
+          <p>
+            Project taken from a freelancing client
+          </p>
+          <a href="https://github.com/Snakpi/heart-attack-clf/">Link</a>
+          <hr>
+        </figcaption>
+      </div>
+      <div class='project' id='wish-eda'>
+        <div class='cover-image' id='wish-eda'></div>
+        <figcaption>
+          <h4>Exploratory Data Analysis on Wish's Summer Clothes Dataset</h4>
+          <p>
+          </p>
+          <a href="https://github.com/Snakpi/heart-attack-clf/">Link</a>
+          <hr>
+        </figcaption>
+      </div>
+      <div class='project' id='wish-eda'>
+        <div class='cover-image' id='wish-eda'></div>
+        <figcaption>
+          <h4>Exploratory Data Analysis on Wish's Summer Clothes Dataset</h4>
+          <p>
+          </p>
+          <a href="https://github.com/Snakpi/heart-attack-clf/">Link</a>
+          <hr>
+        </figcaption>
+      </div>
+      <div class='project' id='wish-eda'>
+        <div class='cover-image' id='wish-eda'></div>
+        <figcaption>
+          <h4>Exploratory Data Analysis on Wish's Summer Clothes Dataset</h4>
+          <p>
+          </p>
+          <a href="https://github.com/Snakpi/heart-attack-clf/">Link</a>
+          <hr>
+        </figcaption>
+      </div>
+      <div class='project' id='wish-eda'>
+        <div class='cover-image' id='wish-eda'></div>
+        <figcaption>
+          <h4>Exploratory Data Analysis on Wish's Summer Clothes Dataset</h4>
+          <p>
+          </p>
+          <a href="https://github.com/Snakpi/heart-attack-clf/">Link</a>
+          <hr>
+        </figcaption>
+      </div>
+    </section>
+    <hr>
+    <section id='about'>
+      <h2>About Me:</h2>
     </section>
     <footer class="socials">
       <a id="instagram" href="https://www.instagram.com/_vmvu/" target="_blank"
@@ -41,5 +102,6 @@
         ><i class="fa fa-linkedin"></i
       ></a>
     </footer>
+    <script type="text/javascript" src="js/scroll-top.js"></script>
   </body>
 </html>

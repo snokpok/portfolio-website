@@ -1,0 +1,178 @@
+
+:root {
+  --after-hover-color: rgb(212, 209, 209);
+  --after-hover-links: rgb(0, 217, 255);
+}
+
+
+/* General things */
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "JetBrains Mono", monospace;
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin: 70px auto;
+  font-size: 16px;
+}
+a {
+  color: rgb(3, 128, 150);
+}
+a:hover {
+  color: var(--after-hover-links);
+}
+
+
+
+/* Navigation bar */
+nav {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+
+  z-index: 1;
+  top: 0;
+  left: 0;
+
+  background-color: black;
+  border-bottom: 1px solid white;
+
+  display: inline-block;
+
+  padding: 5px;
+  font-family: "Courier New", Courier, monospace;
+}
+nav #logo {
+  float: left;
+  color: white;
+  border: 1px double white;
+  padding: 0.5em;
+  font-family:'Courier New', Courier, monospace;
+  text-decoration: none;
+  border-radius: 15%;
+}
+nav ul {
+  list-style-type: none;
+  margin: 1px auto 0;
+  padding: 0;
+  float: right;
+  height: 100%;
+  display: block;
+}
+nav li {
+  font-size: 1rem;
+  display: inline-block;
+  margin: 0.3em;
+  padding: 5px;
+  position: relative;
+}
+nav li a {
+  text-decoration: none;
+  color: white;
+}
+nav li a:hover {
+  color: var(--after-hover-color);
+}
+
+
+/* The scroll to top button */
+#to-top {
+  display: block;
+  position: fixed;
+  bottom: 60px;
+  right: 25px;
+  background-color: red;
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 30%;
+  border: 0px;
+}
+
+/* The header part*/
+header .name {
+  color: var(--after-hover-links);
+  font-weight: bold;
+}
+header {
+  text-align: center;
+}
+h1 {
+  font-size: 2.5rem;
+  margin: 1.5rem;
+  font-weight: 900;
+}
+header #profession {
+  font-style: italic;
+  font-weight: 100;
+}
+header div img {
+  width:10rem;
+  margin: 1rem;
+  border-radius: 50%;
+  display: inline-block;
+}
+hr {
+  width: 50%;
+}
+
+
+
+/* Projects and about section */
+section {
+  width: auto;
+}
+.project {
+  border-radius: 20px;
+  display: inline-block;
+  width: 20%;
+  height: 25%;
+  border: 1px solid white;
+  margin: 1rem;
+}
+.project .cover-image {
+  margin: 0;
+  width: auto;
+  height: 10rem;
+  background-size: cover;
+  border-radius: 20px 20px 0px 0px;
+  border-bottom: 1px solid white;
+}
+.cover-image#heart-attack-clf {
+  background-image: url('https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/slideshows/did_you_know_this_could_lead_to_heart_disease_slideshow/650x350_did_you_know_this_could_lead_to_heart_disease_slideshow.jpg');
+}
+.cover-image#wish-eda {
+  background-image: url('https://lh3.googleusercontent.com/proxy/X7utEURfpwSu_lQj1shS5j1zYZ00DxSQA1zHROc-YfIw4xl8PrkmfPw8NX9H5aIUp2KC9B5VAyrP7mQhHiusOGwYSrDKmLbxW8QaPCcVMOw2mVd8aIOB6Jyccw');
+}
+section h2 {
+  text-decoration:underline;
+}
+
+/* Social links at the bottom */
+.socials a {
+  display: inline-block;
+  margin: 5px;
+}
+/* Footer */ 
+footer {
+  position: fixed;
+  border-top: 1px solid white;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+}
+footer i {
+  color: white;
+  font-size: 100px;
+}
+footer i:hover {
+  color: var(--after-hover-color)
+}
+.fa {
+  font-size: 30px;
+}
