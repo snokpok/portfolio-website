@@ -1,7 +1,7 @@
 /* RESUME PAGE */
 body {
   font-size: 16px;
-  width: 80%;
+
 }
 
 h1,h2,h3,h4,p {
@@ -17,12 +17,17 @@ h2 {
   font-family:'Courier New', Courier, monospace;
 }
 section {
+  margin-bottom: 10rem;
+}
+section > h2 {
+  color: cyan;
 }
 
-
 /* Experiences */
-div.experience {
+.section {
   padding: 10px;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
 }
 .heading {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -58,6 +63,3 @@ div.experience {
 .grade {
   color: greenyellow;
 }
-
-
-

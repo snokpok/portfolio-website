@@ -95,27 +95,46 @@ nav li a:hover {
 }
 
 /* The header part*/
-header .name {
-  color: var(--after-hover-links);
-  font-weight: bold;
-}
 header {
   text-align: center;
+  width: 70%;
+  margin: 0 auto;
 }
-h1 {
-  font-size: 2.5rem;
-  margin: 1.5rem;
-  font-weight: 900;
-}
-header #profession {
-  font-style: italic;
-  font-weight: 100;
+header h1.name {
+  color: var(--after-hover-links);
+  font-weight: bold;
+  font-size: 8rem;
+  margin: 1rem;
 }
 header div img {
-  width:10rem;
+  width:15rem;
   margin: 1rem;
   border-radius: 50%;
   display: inline-block;
+}
+header #profile-image-caption {
+  font-style: italic;
+  font-weight: 100;
+  color: gray;
+}
+header p#profession {
+  color: lightgreen;
+  font-weight: 100;
+  font-size: 2rem;
+}
+header #opening-words p {
+  text-align: center;
+  margin-bottom: 10rem;
+  line-height: 3;
+}
+#about h2 {
+  margin-bottom: 2rem;
+}
+#about article {
+  text-align: justify;
+  width: 30%;
+  margin: 0 auto;
+  line-height: 2;
 }
 hr {
   width: 50%;
@@ -124,16 +143,21 @@ hr {
 
 
 /* Projects and about section */
-section {
+section#projects {
   width: auto;
+  height: 50%;
+}
+h2 {
+  margin-bottom: 5rem;
 }
 .project {
   border-radius: 20px;
   display: inline-block;
   width: 20%;
-  height: 25%;
+  max-height: 20%;
   border: 1px solid white;
   margin: 1rem;
+  margin-bottom: 8rem;
 }
 .project .cover-image {
   margin: 0;
@@ -143,11 +167,17 @@ section {
   border-radius: 20px 20px 0px 0px;
   border-bottom: 1px solid white;
 }
+.project .caption {
+  padding: 1rem;
+}
 .cover-image#heart-attack-clf {
   background-image: url('https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/slideshows/did_you_know_this_could_lead_to_heart_disease_slideshow/650x350_did_you_know_this_could_lead_to_heart_disease_slideshow.jpg');
 }
 .cover-image#wish-eda {
-  background-image: url('https://lh3.googleusercontent.com/proxy/X7utEURfpwSu_lQj1shS5j1zYZ00DxSQA1zHROc-YfIw4xl8PrkmfPw8NX9H5aIUp2KC9B5VAyrP7mQhHiusOGwYSrDKmLbxW8QaPCcVMOw2mVd8aIOB6Jyccw');
+  background-image: url('https://media.istockphoto.com/photos/clothes-shop-interior-picture-id901863672?k=6&m=901863672&s=612x612&w=0&h=-_sWo8B6OJRaj4OuwblW8ytajBnBY_UMuaXGjr95wrE=');
+}
+.cover-image#todo-app {
+  background-image: url('https://media.istockphoto.com/vectors/to-do-list-vector-id903719860?k=6&m=903719860&s=612x612&w=0&h=Haz8DqU-KAMnsc-bXs9AWusLZHSiQs5J8_a0QuGnIxY=')
 }
 section h2 {
   text-decoration:underline;
@@ -174,5 +204,5 @@ footer i:hover {
   color: var(--after-hover-color)
 }
 .fa {
-  font-size: 30px;
+  font-size: 20px;
 }
