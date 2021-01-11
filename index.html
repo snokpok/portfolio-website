@@ -13,6 +13,7 @@
     <link href="static/css/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    
     <nav>
       <a href="#"><div id="logo">VV</div></a>
       <ul>
@@ -21,67 +22,69 @@
         <li><a href="resume.html">Resume</a></li>
       </ul>
     </nav>
+
+
     <button id='to-top' onclick="topFunction()">
-      Top
+      ^
     </button>
+    
     <header>
-      <div id="name-and-image">
-        <h1 class="name">Vincent Vu</h1>
-        <img src='./static/picofme.jpg'>
-        <h3 id='profile-image-caption'>^ I'm definitely not mad at anyone.</h3>
-      </div>
+      <h1 class="name" id='name'>Vincent Vu</h1>
+      <img id="profile-image" src='./static/picofme.jpg'>
+      <h3 id='profile-image-caption'>^ I'm definitely not mad at anyone.</h3>
+
       <hr><hr>
       <p id="profession">Full-stack Web Developer | Data Analyst </p>
       <hr><hr>
-      <div id="opening-words">
-        <p>
-          Welcome to my portfolio!
-          <br>
-          I'm a full-stack web developer with a slight lean into backend development.
-          <br>
-          I <em>code</em> in snake 🐍
-        </p>
-      </div>
-      <hr />
+    
+      <p id="opening-words">
+        Welcome to my portfolio!
+        <br>
+        I'm a full-stack web developer with a slight lean into backend development.
+        <br>
+        I <em>code</em> in snake 🐍
+      </p>
     </header>
+    
+    
     <section id="projects">
+      
       <h2>Things I have made:</h2>
+      <hr>
       <div class='project' id='heart-attack-clf'>
         <div class="cover-image" id='heart-attack-clf'></div>
         <div class="caption">
           <h4>Heart Attack Classification</h4>
-          <p>
-            Project taken from a freelancing client
-          </p>
+          <p>Project taken from a freelancing client</p>
           <a href="https://github.com/Snakpi/heart-attack-clf/">Link</a>
           <hr>
         </div>
       </div>
+      
       <div class='project' id='wish-eda'>
         <div class='cover-image' id='wish-eda'></div>
         <div class="caption">
           <h4>EDA on Wish's Summer Clothes Dataset</h4>
-          <p>
-            Quantile analysis on Wish's Summer Clothes Dataset' on Kaggle
-          </p>
+          <p>Quantile analysis on Wish's Summer Clothes Dataset' on Kaggle</p>
           <a href="https://www.kaggle.com/snakepie/eda-of-wish-s-summer-clothes-sales-data">Link</a>
           <hr>
         </div>
       </div>
-      <div class='project' id='wish-eda'>
+      
+      <div class='project' id='todo-app'>
         <div class='cover-image' id='todo-app'></div>
         <div class="caption">
           <h4>Collaborative To-Do App</h4>
-          <p>
-            First project with Flask as backend and HTML5+CSS3 on frontend
-          </p>
+          <p>First project with Flask as backend and HTML5+CSS3 on frontend</p>
           <a href="https://vincent-flask-todo-app.herokuapp.com/">Link</a>
           <hr>
         </div>
       </div>
-    <hr>
+
+
     <section id='about'>
       <h2>About Me:</h2>
+      <hr>
       <article>
         I was born in the economic center of Vietnam: HCMC. Currently, I'm a freshman at the University of Southern California studying computer science. 
         <br><br>

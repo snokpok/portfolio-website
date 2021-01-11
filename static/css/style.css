@@ -1,24 +1,41 @@
-
 :root {
   --after-hover-color: rgb(212, 209, 209);
   --after-hover-links: rgb(0, 217, 255);
 }
 
-
 /* General things */
 * {
   box-sizing: border-box;
 }
-html {
-  scroll-behavior: smooth;
-}
+html,
 body {
   font-family: "JetBrains Mono", monospace;
   text-align: center;
   background-color: black;
   color: white;
-  margin: 70px auto;
+  margin: 2rem auto;
   font-size: 16px;
+  scroll-behavior: smooth;
+}
+h1 {
+  font-size: 5rem;
+  font-weight: 10;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 50;
+  font-family: "Courier New", Courier, monospace;
+}
+section {
+  margin: 10rem 0;
+}
+section > h2 {
+  color: cyan;
+  text-decoration: underline;
+  margin-top: 6rem;
+}
+hr {
+  width: 50%;
 }
 a {
   color: rgb(3, 128, 150);
@@ -26,8 +43,9 @@ a {
 a:hover {
   color: var(--after-hover-links);
 }
-
-
+.white-font {
+  color: white;
+}
 
 /* Navigation bar */
 nav {
@@ -52,7 +70,6 @@ nav #logo {
   color: white;
   border: 1px double white;
   padding: 0.5em;
-  font-family:'Courier New', Courier, monospace;
   text-decoration: none;
   border-radius: 15%;
 }
@@ -79,7 +96,6 @@ nav li a:hover {
   color: var(--after-hover-color);
 }
 
-
 /* The scroll to top button */
 #to-top {
   display: block;
@@ -87,6 +103,8 @@ nav li a:hover {
   bottom: 60px;
   right: 25px;
   background-color: red;
+  color: white;
+  font-size: 1.5rem;
   text-align: center;
   width: 3rem;
   height: 3rem;
@@ -100,29 +118,27 @@ header {
   width: 70%;
   margin: 0 auto;
 }
-header h1.name {
+header #name {
   color: var(--after-hover-links);
   font-weight: bold;
   font-size: 8rem;
   margin: 1rem;
 }
-header div img {
-  width:15rem;
+header #profile-image {
+  width: 15rem;
   margin: 1rem;
   border-radius: 50%;
   display: inline-block;
 }
 header #profile-image-caption {
   font-style: italic;
-  font-weight: 100;
   color: gray;
 }
-header p#profession {
+header #profession {
   color: lightgreen;
-  font-weight: 100;
   font-size: 2rem;
 }
-header #opening-words p {
+header #opening-words {
   text-align: center;
   margin-bottom: 10rem;
   line-height: 3;
@@ -136,28 +152,20 @@ header #opening-words p {
   margin: 0 auto;
   line-height: 2;
 }
-hr {
-  width: 50%;
-}
-
-
 
 /* Projects and about section */
 section#projects {
   width: auto;
   height: 50%;
 }
-h2 {
-  margin-bottom: 5rem;
-}
+
 .project {
   border-radius: 20px;
   display: inline-block;
   width: 20%;
   max-height: 20%;
   border: 1px solid white;
-  margin: 1rem;
-  margin-bottom: 8rem;
+  margin: 3rem 1rem;
 }
 .project .cover-image {
   margin: 0;
@@ -167,28 +175,76 @@ h2 {
   border-radius: 20px 20px 0px 0px;
   border-bottom: 1px solid white;
 }
+.cover-image#heart-attack-clf {
+  background-image: url("https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/slideshows/did_you_know_this_could_lead_to_heart_disease_slideshow/650x350_did_you_know_this_could_lead_to_heart_disease_slideshow.jpg");
+}
+.cover-image#wish-eda {
+  background-image: url("https://media.istockphoto.com/photos/clothes-shop-interior-picture-id901863672?k=6&m=901863672&s=612x612&w=0&h=-_sWo8B6OJRaj4OuwblW8ytajBnBY_UMuaXGjr95wrE=");
+}
+.cover-image#todo-app {
+  background-image: url("https://media.istockphoto.com/vectors/to-do-list-vector-id903719860?k=6&m=903719860&s=612x612&w=0&h=Haz8DqU-KAMnsc-bXs9AWusLZHSiQs5J8_a0QuGnIxY=");
+}
 .project .caption {
   padding: 1rem;
 }
-.cover-image#heart-attack-clf {
-  background-image: url('https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/slideshows/did_you_know_this_could_lead_to_heart_disease_slideshow/650x350_did_you_know_this_could_lead_to_heart_disease_slideshow.jpg');
+
+/* Experiences */
+.section {
+  padding: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
 }
-.cover-image#wish-eda {
-  background-image: url('https://media.istockphoto.com/photos/clothes-shop-interior-picture-id901863672?k=6&m=901863672&s=612x612&w=0&h=-_sWo8B6OJRaj4OuwblW8ytajBnBY_UMuaXGjr95wrE=');
+.heading {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 2px;
 }
-.cover-image#todo-app {
-  background-image: url('https://media.istockphoto.com/vectors/to-do-list-vector-id903719860?k=6&m=903719860&s=612x612&w=0&h=Haz8DqU-KAMnsc-bXs9AWusLZHSiQs5J8_a0QuGnIxY=')
+.subheading {
+  font-style: italic;
+  font-weight: 100;
+  font-size: 1.3rem;
+  color: yellow;
+  text-transform: uppercase;
+  margin-top: 3px;
 }
-section h2 {
-  text-decoration:underline;
+.description {
+  font-size: 1.5rem;
+  color: gray;
+  width: 50%;
+  line-height: 2;
+  margin: 0 auto;
+}
+.time {
+  color: rgba(51, 133, 255, 0.911);
+  font-weight: 100;
+  font-style: italic;
+  font-size: 1rem;
+}
+.location {
+  font-weight: bold;
+  color: rgb(0, 255, 76);
+}
+/* Education */
+.grade {
+  color: greenyellow;
+}
+
+/* Skills */
+#skills > div {
+  margin-bottom: 5rem;
 }
 
 /* Social links at the bottom */
 .socials a {
   display: inline-block;
   margin: 5px;
+  font-size: 30px;
 }
-/* Footer */ 
+/* Footer */
 footer {
   position: fixed;
   border-top: 1px solid white;
@@ -201,8 +257,5 @@ footer i {
   font-size: 100px;
 }
 footer i:hover {
-  color: var(--after-hover-color)
-}
-.fa {
-  font-size: 20px;
+  color: var(--after-hover-color);
 }
