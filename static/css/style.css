@@ -176,6 +176,9 @@ section#projects {
 .cover-image#todo-app {
   background-image: url("https://media.istockphoto.com/vectors/to-do-list-vector-id903719860?k=6&m=903719860&s=612x612&w=0&h=Haz8DqU-KAMnsc-bXs9AWusLZHSiQs5J8_a0QuGnIxY=");
 }
+.cover-image#tdsco-ceramics {
+  background-image: url("../screenshot.PNG");
+}
 .project .caption {
   padding: 1rem;
   height: 50%;
