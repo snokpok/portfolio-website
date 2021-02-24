@@ -13,6 +13,9 @@
     />
   </head>
   <body>
+    <video autoplay loop id="background-video">
+      <source src="background-video.mp4" type="video/mp4" />
+    </video>
     <nav>
       <a href="/portfolio-website/index.html"><div id="logo">VV</div></a>
       <ul>
@@ -21,9 +24,7 @@
         <li><a href="resume.html">Resume</a></li>
       </ul>
     </nav>
-    <button id='to-top' onclick="topFunction()">
-      ^
-    </button>
+    
     <h1>RESUME</h1>
     <section id="experiences">
       <h2>EXPERIENCE</h2>
@@ -59,20 +60,18 @@
       <div class="section">
         <h3 class="heading">University of Southern California</h3>
         <h4 class="subheading">
-          B.S., Computer Science | <span class="grade">GPA: 3.75</span>
+          B.S., Computer Science  <span class="grade">GPA: 3.75</span>
         </h4>
         <p>
-          <span class="time">August 2020 - May 2024</span> | 
+          <span class="time">August 2020 - May 2024</span> |
           <span class="location">Los Angeles, CA</span>
         </p>
-        <p class="description">
-          Activities: Efynn
-        </p>
+        <p class="description">Activities: Efynn</p>
       </div>
       <div class="section">
         <h3 class="heading">International School Ho Chi Minh City</h3>
         <h4 class="subheading">
-          IBDP Bilingual Diploma |
+          IBDP Bilingual Diploma 
           <span class="grade">Points awarded: <strong>40</strong> / 45</span>
         </h4>
         <p class="description"></p>
@@ -90,49 +89,60 @@
       <div id="web-development">
         <h4 class="heading">Web Development</h4>
         <p class="description">
-          <br>
-          <strong class="white-font">Backend:</strong> 
-          <br>
-          Python (Flask), Node.js, Express, MongoDB, Postgres, Firebase
-          <br>
-          <strong class="white-font">Frontend:</strong> 
-          <br>
-          HTML5, CSS, JavaScript (ES6), jQuery, React.js
+          <br />
+          <strong class="white-font">Backend:</strong>
+          <br />
+          Node.js, Express, MongoDB, Postgres
+          <br />
+          <strong class="white-font">Frontend:</strong>
+          <br />
+          HTML5, CSS3, JavaScript (ES6), React.js
         </p>
       </div>
       <div id="ai">
         <h4 class="heading">AI/ML/DL</h4>
         <p class="description">
-          <br>
-          <strong>Languages:</strong><br> Python, SQL, C/C++
-          <br> 
-          <strong>Data Science Libraries:</strong><br> NumPy, Pandas, Matplotlib 
-          <br>
-          <strong>ML Libraries:</strong> <br>Scikit-Learn, XgBoost, Tensorflow, PyTorch
-          <br>
-          <strong>Web Scraping Library:</strong><br> Scrapy, Selenium
-          <br>
-          <strong>NLP Library:</strong> <br>NLTK, Gensim, spaCy
+          <br />
+          <strong>Languages:</strong><br />
+          Python, SQL, C/C++
+          <br />
+          <strong>Data Science Libraries:</strong><br />
+          NumPy, Pandas, Matplotlib
+          <br />
+          <strong>ML Libraries:</strong> <br />Scikit-Learn, XgBoost,
+          Tensorflow, PyTorch
+          <br />
+          <strong>Web Scraping Library:</strong><br />
+          Scrapy, Selenium
+          <br />
+          <strong>NLP Library:</strong> <br />NLTK, Gensim, spaCy
         </p>
       </div>
     </section>
 
     <footer>
-      <div class="copyright">
-        © 2021 Vincent Vu
-      </div>
+      <div class="copyright">© 2021 Vincent Vu</div>
       <div class="socials">
-        <a id="instagram" href="https://www.instagram.com/_vmvu/" target="_blank"
+        <a
+          id="instagram"
+          href="https://www.instagram.com/_vmvu/"
+          target="_blank"
           ><i class="fa fa-instagram" aria-hidden="true"></i
         ></a>
         <a id="github" href="https://github.com/Snakpi" target="_blank"
           ><i class="fa fa-github"></i
         ></a>
-        <a id="linkedin" href="https://www.linkedin.com/in/vmvu/" target="_blank"
+        <a
+          id="linkedin"
+          href="https://www.linkedin.com/in/vmvu/"
+          target="_blank"
           ><i class="fa fa-linkedin"></i
         ></a>
       </div>
     </footer>
-    <script type="text/javascript" src="js/scroll-top.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace()
+    </script>
   </body>
 </html>
