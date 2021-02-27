@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -15,102 +10,106 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link href="static/css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/projectList.js" defer></script>
+    <script type="text/javascript" src="js/screenLoad.js" defer></script>
+    <script type="text/javascript" src="js/loadOnScroll.js" defer></script>
+    <script defer src="https://unpkg.com/feather-icons"></script>
+    <script defer>
+      feather.replace();
+    </script>
   </head>
-  <body>
+  <body onload="screenLoad()">
     <video autoplay loop preload id="background-video">
       <source src="background-video.mp4" type="video/mp4" />
     </video>
-    <nav>
-      <a href="index.html"><div id="logo">VV</div></a>
-      <ul>
-        <li><a href="#projects">My projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="resume.html">Resume</a></li>
-      </ul>
-    </nav>
 
-    <header>
-      <div id="name-container"><h1 id="name">Vincent Vu</h1></div>
-      <div id="profile-image-container">
-        <img id="profile-image" src="./static/picofme.jpg" />
+    <div id="body-container">
+      <nav>
+        <a href="index.html"><div id="logo">VV</div></a>
+        <ul>
+          <li><a href="#projects-title">My projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </nav>
+
+      <header>
+        <div id="name-container"><h1 id="name">Vincent Vu</h1></div>
+        <div id="profile-image-container">
+          <img id="profile-image" src="./static/picofme.jpg" />
+        </div>
+        <h3 id="profile-image-caption">^ I'm definitely not mad at anyone.</h3>
+
+        <hr class="left-in-hr" />
+        <hr class="right-in-hr" />
+        <p id="profession">Full-stack Web Developer & Data Analyst</p>
+        <hr class="left-in-hr" />
+        <hr class="right-in-hr" />
+
+        <p id="opening-words">
+          Welcome to my portfolio!
+          <br />
+          I'm a full-stack web developer with a slight lean into backend
+          development.
+          <br />
+          I <em>code</em> in snake 🐍
+        </p>
+      </header>
+
+      <div class="section-container" id="projects">
+        <h2 id="projects-title">Things I have made:</h2>
+        <hr />
+        <section id="projects"></section>
       </div>
-      <h3 id="profile-image-caption">^ I'm definitely not mad at anyone.</h3>
 
-      <hr />
-      <hr />
-      <p id="profession">Full-stack Web Developer & Data Analyst</p>
-      <hr />
-      <hr />
-
-      <p id="opening-words">
-        Welcome to my portfolio!
-        <br />
-        I'm a full-stack web developer with a slight lean into backend
-        development.
-        <br />
-        I <em>code</em> in snake 🐍
-      </p>
-    </header>
-
-    <h2 id="projects-title">Things I have made:</h2>
-    <hr />
-    <section id="projects"></section>
-
-    <h2>About Me:</h2>
-    <hr />
-    <section id="about">
-      <article>
-        I was born in the economic center of Vietnam: HCMC. Currently, I'm a
-        freshman at the University of Southern California studying computer
-        science.
-        <br /><br />
-        I have a deep passion for web and mobile applications that utilizes AI
-        and data science. I also love working in or with startups.
-        <br /><br />
-        While I specialize in backend development where I mostly use Express to
-        develop ReST APIs. I also do data science and machine learning, where my
-        niche is in recommendation engines. Part of this is because I binge
-        sci-fi and horror series in Netflix too hard since I find those
-        recommendations always so fresh, and other part of this is because a lot
-        of my ideas and projects revolved around personalizations through user
-        data.
-        <br /><br />
-        I also do mobile development, and I'm currently in love with Flutter for
-        its <em style="color: cyan">speed</em> as well as for the fact that it's
-        only for early adopters, and I love being a part of something new to the
-        market, even though that meant dealing with its unique difficulties.
-        <br /><br />
-        I'm forever refining my crafts and learning new technologies to cope
-        with the ever more competitive tech landscape in the world today.
-      </article>
-    </section>
-
-    <footer>
-      <div class="copyright">
-        <p>© 2021 Vincent Vu</p>
+      <div class="section-container" id="about">
+        <h2 id="about-title">About Me:</h2>
+        <hr />
+        <section id="about">
+          <article>
+            I was born in the economic center of Vietnam: HCMC. Currently, I'm a
+            freshman at the University of Southern California studying computer
+            science.
+            <br /><br />
+            I have a deep passion for web and mobile applications that utilizes AI
+            and data science. I also love working in or with startups.
+            <br /><br />
+            While I specialize in backend development where I mostly use Express
+            to develop ReST APIs. I also do data science and machine learning,
+            where my niche is in recommendation engines. Part of this is because I
+            binge sci-fi and horror series in Netflix too hard since I find those
+            recommendations always so fresh, and other part of this is because a
+            lot of my ideas and projects revolved around personalizations through
+            user data.
+            <br /><br />
+            I'm forever refining my crafts and learning new technologies to cope
+            with the ever more competitive tech landscape in the world today.
+          </article>
+        </section>
       </div>
-      <div class="socials">
-        <a
-          id="instagram"
-          href="https://www.instagram.com/_vmvu/"
-          target="_blank"
-          ><i class="fa fa-instagram" aria-hidden="true"></i
-        ></a>
-        <a id="github" href="https://github.com/Snakpi" target="_blank"
-          ><i class="fa fa-github"></i
-        ></a>
-        <a
-          id="linkedin"
-          href="https://www.linkedin.com/in/vmvu/"
-          target="_blank"
-          ><i class="fa fa-linkedin"></i
-        ></a>
-      </div>
-    </footer>
-    <script type="text/javascript" src="js/project-list.js" defer></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script>
-      feather.replace();
-    </script>
+      
+      <footer>
+        <div class="copyright">
+          <p>© 2021 Vincent Vu</p>
+        </div>
+        <div class="socials">
+          <a
+            id="instagram"
+            href="https://www.instagram.com/_vmvu/"
+            target="_blank"
+            ><i class="fa fa-instagram" aria-hidden="true"></i
+          ></a>
+          <a id="github" href="https://github.com/Snakpi" target="_blank"
+            ><i class="fa fa-github"></i
+          ></a>
+          <a
+            id="linkedin"
+            href="https://www.linkedin.com/in/vmvu/"
+            target="_blank"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

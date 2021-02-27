@@ -2,15 +2,15 @@
 <html>
   <head>
     <link href="static/css/style.css" type="text/css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://unpkg.com/feather-icons" defer></script>
+    <script type="text/javascript" src="js/loadOnScroll.js" defer></script>
+    <script>
+      feather.replace();
+    </script>
   </head>
   <body>
     <video autoplay loop id="background-video">
@@ -21,10 +21,11 @@
       <ul>
         <li><a href="#experiences">Experience</a></li>
         <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="resume.html">Resume</a></li>
       </ul>
     </nav>
-    
+
     <h1>RESUME</h1>
     <section id="experiences">
       <h2>EXPERIENCE</h2>
@@ -60,7 +61,7 @@
       <div class="section">
         <h3 class="heading">University of Southern California</h3>
         <h4 class="subheading">
-          B.S., Computer Science  <span class="grade">GPA: 3.75</span>
+          B.S., Computer Science <span class="grade">GPA: 3.75</span>
         </h4>
         <p>
           <span class="time">August 2020 - May 2024</span> |
@@ -71,7 +72,7 @@
       <div class="section">
         <h3 class="heading">International School Ho Chi Minh City</h3>
         <h4 class="subheading">
-          IBDP Bilingual Diploma 
+          IBDP Bilingual Diploma
           <span class="grade">Points awarded: <strong>40</strong> / 45</span>
         </h4>
         <p class="description"></p>
@@ -140,9 +141,5 @@
         ></a>
       </div>
     </footer>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script>
-      feather.replace()
-    </script>
   </body>
 </html>
