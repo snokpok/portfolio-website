@@ -1,8 +1,15 @@
 const projectsList = [
   {
+    name: "Collaborative To-Do App",
+    description: "Built backend with NestJS + TypeORM and frontend with Sass, Next.js, Formik, and Draft.js",
+    link: "",
+    key: "cta"
+  },
+  {
     name: "Heart Attack Classification",
     description: "Project taken from a freelancing client",
     link: "https://github.com/Snakpi/heart-attack-clf/",
+    key: "hat"
   },
   {
     name: "EDA on Wish's Summer Clothes Dataset",
@@ -10,21 +17,20 @@ const projectsList = [
       "Quantile analysis on Wish's Summer Clothes Dataset' on Kaggle",
     link:
       "https://www.kaggle.com/snakepie/eda-of-wish-s-summer-clothes-sales-data",
-  },
-  {
-    name: "Collaborative To-Do App",
-    description: "Built an Express API and integrated with a React front-end",
-    link: "",
+    key: "wsc",
   },
   {
     name: "TDS Company Ltd. Landing Page",
     description:
       "Renewing a Vietnamese ceramics company's landing page with HTML5 + CSS3",
     link: "https://tdsco-ceramic.com",
+    key: "tds"
   },
 ];
 
-const projectsContainer = document.querySelector(".section-container #projects");
+const projectsContainer = document.querySelector(
+  ".section-container #projects"
+);
 
 for (let i = 0; i < projectsList.length; i++) {
   const projectObj = projectsList[i];
@@ -35,7 +41,7 @@ for (let i = 0; i < projectsList.length; i++) {
 
   const coverImage = document.createElement("img");
   coverImage.className = "cover-image";
-  coverImage.src = `static/projects/${i + 1}.jpg`;
+  coverImage.src = `static/projects/${projectObj.key}.jpg`;
   coverImageContainer.append(coverImage);
 
   const caption = document.createElement("div");
@@ -50,9 +56,9 @@ for (let i = 0; i < projectsList.length; i++) {
   a.setAttribute("href", projectObj.link);
   a.setAttribute("target", "_blank");
   a.innerText = "Link";
-  const hr = document.createElement("hr")
+  const hr = document.createElement("hr");
 
-  link.append(a, hr)
+  link.append(a, hr);
   caption.append(h4, p);
   project.append(coverImageContainer, caption, link);
   projectsContainer.append(project);

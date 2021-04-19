@@ -6,18 +6,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script src="https://unpkg.com/feather-icons" defer></script>
     <script type="text/javascript" src="js/loadOnScroll.js" defer></script>
-    <script>
-      feather.replace();
-    </script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <title>My resume | Vincent Vu</title>
   </head>
   <body>
     <video autoplay loop id="background-video">
       <source src="background-video.mp4" type="video/mp4" />
     </video>
     <nav>
-      <a href="/portfolio-website/index.html"><div id="logo">VV</div></a>
+      <a href="/index.html"><div id="logo">VV</div></a>
       <ul>
         <li><a href="#experiences">Experience</a></li>
         <li><a href="#education">Education</a></li>
@@ -30,6 +28,15 @@
     <section id="experiences">
       <h2>EXPERIENCE</h2>
       <hr />
+      <div class="section" id="geek-up">
+        <h3 class="heading">GEEK UP TECHNOLOGY JSC</h3>
+        <h4 class="subheading">Backend development intern</h4>
+        <p class="description">Worked to develop an internal web application to increase recruitment and HR efficiency at the company</p>
+        <p>
+          <span class="time">March 2021 - May 2021</span> |
+          <span class="location">Ho Chi Minh City, Vietnam</span>
+        </p>
+      </div>
       <div class="section" id="alta-software">
         <h3 class="heading">ALTA SOFTWARE</h3>
         <h4 class="subheading">Artificial Intelligence Intern</h4>
@@ -84,45 +91,39 @@
       </div>
     </section>
 
-    <section id="skills">
       <h2>SKILLS</h2>
       <hr />
       <div id="web-development">
         <h4 class="heading">Web Development</h4>
         <p class="description">
           <br />
+          <strong>Languages:</strong><br />
+            <img src='./static/icons/typescript.svg' alt="TypeScript" class="programming-tool"/>
+            <img src='./static/icons/javascript.svg' alt="JavaScript" class="programming-tool"/>
+            <img src='./static/icons/python-5.svg' alt="Python" class="programming-tool"/>
+          <br />
+          <br />
           <strong class="white-font">Backend:</strong>
           <br />
-          Node.js, Express, MongoDB, Postgres
+          <img src='./static/icons/nestjs.svg' alt="NestJS" class="programming-tool"/>
+          <img src='./static/icons/file-type-node.svg' alt="NodeJS" class="programming-tool"/>
+          <img src='./static/icons/postgresql.svg' alt="NodeJS" class="programming-tool"/>
+          <br />
           <br />
           <strong class="white-font">Frontend:</strong>
           <br />
-          HTML5, CSS3, JavaScript (ES6), React.js
-        </p>
-      </div>
-      <div id="ai">
-        <h4 class="heading">AI/ML/DL</h4>
-        <p class="description">
+          <img src='./static/icons/html-5.svg' alt="NodeJS" class="programming-tool"/>
+          <img src='./static/icons/file-type-sass.svg' alt="Sass" class="programming-tool"/>
+          <img src='./static/icons/react.svg' alt="ReactJS" class="programming-tool"/>
           <br />
-          <strong>Languages:</strong><br />
-          Python, SQL, C/C++
           <br />
-          <strong>Data Science Libraries:</strong><br />
-          NumPy, Pandas, Matplotlib
-          <br />
-          <strong>ML Libraries:</strong> <br />Scikit-Learn, XgBoost,
-          Tensorflow, PyTorch
-          <br />
-          <strong>Web Scraping Library:</strong><br />
-          Scrapy, Selenium
-          <br />
-          <strong>NLP Library:</strong> <br />NLTK, Gensim, spaCy
         </p>
       </div>
     </section>
 
+    <section id="skills">
     <footer>
-      <div class="copyright">© 2021 Vincent Vu</div>
+      <div class="copyright">&#169 2021 Vincent Vu</div>
       <div class="socials">
         <a
           id="instagram"
@@ -132,7 +133,7 @@
         ></a>
         <a id="github" href="https://github.com/Snakpi" target="_blank"
           ><i class="fa fa-github"></i
-        ></a>
+       ></a>
         <a
           id="linkedin"
           href="https://www.linkedin.com/in/vmvu/"
