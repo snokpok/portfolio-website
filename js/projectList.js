@@ -1,15 +1,9 @@
 const projectsList = [
   {
-    name: "Collaborative To-Do App",
-    description: "Built backend with NestJS + TypeORM and frontend with Sass, Next.js, Formik, and Draft.js",
-    link: "",
-    key: "cta"
-  },
-  {
     name: "Heart Attack Classification",
     description: "Project taken from a freelancing client",
     link: "https://github.com/Snakpi/heart-attack-clf/",
-    key: "hat"
+    key: "hat",
   },
   {
     name: "EDA on Wish's Summer Clothes Dataset",
@@ -24,7 +18,7 @@ const projectsList = [
     description:
       "Renewing a Vietnamese ceramics company's landing page with HTML5 + CSS3",
     link: "https://tdsco-ceramic.com",
-    key: "tds"
+    key: "tds",
   },
 ];
 
