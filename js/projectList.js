@@ -4,6 +4,7 @@ const projectsList = [
     description: "Project taken from a freelancing client",
     link: "https://github.com/Snakpi/heart-attack-clf/",
     key: "hat",
+    imgFormat: "jpg",
   },
   {
     name: "EDA on Wish's Summer Clothes Dataset",
@@ -12,6 +13,7 @@ const projectsList = [
     link:
       "https://www.kaggle.com/snakepie/eda-of-wish-s-summer-clothes-sales-data",
     key: "wsc",
+    imgFormat: "jpg",
   },
   {
     name: "TDS Company Ltd. Landing Page",
@@ -19,6 +21,15 @@ const projectsList = [
       "Renewing a Vietnamese ceramics company's landing page with HTML5 + CSS3",
     link: "https://tdsco-ceramic.com",
     key: "tds",
+    imgFormat: "jpg",
+  },
+  {
+    name: "Simple chat app",
+    description:
+      "Chat app to experiment with Firebase's Firestore and OAuth services. Built with NextJS + ChakraUI",
+    link: "https://chat-app.vuvincent.com",
+    key: "chat-app",
+    imgFormat: "png",
   },
 ];
 
@@ -35,7 +46,7 @@ for (let i = 0; i < projectsList.length; i++) {
 
   const coverImage = document.createElement("img");
   coverImage.className = "cover-image";
-  coverImage.src = `static/projects/${projectObj.key}.jpg`;
+  coverImage.src = `static/projects/${projectObj.key}.${projectObj.imgFormat}`;
   coverImageContainer.append(coverImage);
 
   const caption = document.createElement("div");
