@@ -1,8 +1,18 @@
 const projectsList = [
   {
+    name: "Listlive: Making Productivity Social",
+    description:
+      "A MVP of a todo-list app where you can share your productivity grinds with others. Built with Next.js + TailwindCSS, with a ReST Python API backend + MongoDB",
+    linkLabel: "Repo",
+    link: "https://github.com/snokpok/listlive",
+    key: "listlive",
+    imgFormat: "png",
+  },
+  {
     name: "Koseur: Nightlife App",
     description: "Nightlife app for Vietnamese bars, built with Next.js + Sass",
-    link: "https://koseur-frontend.vercel.app/",
+    linkLabel: "Repo",
+    link: "https://github.com/snokpok/koseur-frontend",
     key: "koseur",
     imgFormat: "png",
   },
@@ -57,20 +67,23 @@ for (let i = 0; i < projectsList.length; i++) {
 
   const caption = document.createElement("div");
   caption.className = "caption";
-  const h4 = document.createElement("h4");
-  h4.innerText = projectObj.name;
+  const projectName = document.createElement("h4");
+  projectName.style = "font-style: italic; font-weight: bold;";
+  projectName.innerText = projectObj.name;
   const p = document.createElement("p");
+  p.className = "descriptionProject";
+  p.style = "color: rgb(174, 170, 170);";
   p.innerText = projectObj.description;
   const link = document.createElement("div");
   link.className = "link";
   const a = document.createElement("a");
   a.setAttribute("href", projectObj.link);
   a.setAttribute("target", "_blank");
-  a.innerText = "Link";
+  a.innerText = projectObj?.linkLabel ?? "Link";
   const hr = document.createElement("hr");
 
   link.append(a, hr);
-  caption.append(h4, p);
+  caption.append(projectName, p);
   project.append(coverImageContainer, caption, link);
   projectsContainer.append(project);
 }
